@@ -1,0 +1,48 @@
+{
+  "name": "db-models-nc",
+  "version": "1.1.76",
+  "description": "Database models for NextUp Comedy Website",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NextUp-comedy/db-models-nc.git"
+  },
+  "keywords": [
+    "NextUp Comedy",
+    "models",
+    "database"
+  ],
+  "author": "Zaher, Ibrahim, Rand, Ayman, and Nujood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NextUp-comedy/db-models-nc/issues"
+  },
+  "homepage": "https://github.com/NextUp-comedy/db-models-nc#readme",
+  "dependencies": {
+    "@types/big.js": "^6.1.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.1",
+    "joi": "^17.6.0",
+    "pg": "^8.7.3",
+    "sequelize": "^6.21.3",
+    "umzug": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-import-resolver-typescript": "^3.4.0",
+    "eslint-plugin-import": "^2.26.0",
+    "typescript": "^4.7.4"
+  }
+}

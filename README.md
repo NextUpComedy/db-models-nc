@@ -1,2 +1,2 @@
-# -db-models-nc-
-Database models for NextUp Comedy 
+# db-models-nc
+Database Models
