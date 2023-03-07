@@ -1,6 +1,6 @@
 {
   "name": "nextup-comedy",
-  "version": "1.2.01",
+  "version": "1.2.02",
   "description": "Database models for NextUp Comedy Website",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
