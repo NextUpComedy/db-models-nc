@@ -161,8 +161,8 @@ interface IVariables {
     fetchMaxCount: string;
     expiredAfterInYears: string;
     viewliftEmail: string;
-    viewliftEndpoint: string;
-    viewliftWatchesFetchLimit: string;
+    uScreenEndpoint: string;
+    uScreenWatchesFetchLimit: string;
     calculatorEndpoint: string;
   };
   encryptedVariables: {
@@ -177,7 +177,7 @@ interface IDashboardSettings {
   maxCount: number;
   expiredAfterInYears: number;
   email: string;
-  viewliftEndpoint: string;
+  uScreenEndpoint: string;
   limit: number;
   password: string;
   stripeKey: string;

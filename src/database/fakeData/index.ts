@@ -8,8 +8,8 @@ const settings = [
         fetchMaxCount: '10',
         expiredAfterInYears: '2',
         viewliftEmail: 'ibrahim.jarada@gmail.com',
-        viewliftEndpoint: 'https://export-api.viewlift.com',
-        viewliftWatchesFetchLimit: '1000',
+        uScreenEndpoint: 'https://export-api.viewlift.com',
+        uScreenWatchesFetchLimit: '1000',
         calculatorEndpoint: 'https://sjtisy3q46.execute-api.us-east-2.amazonaws.com/dev/',
       },
       encryptedVariables: {

@@ -27,11 +27,11 @@ const getDashboardSettings = async (): Promise<IDashboardSettings> => {
   const email = regularVariables?.viewliftEmail;
   if (!email) throw new Error('viewLiftEmail not found');
   // ? VIEWLIFT_ENDPOINT
-  const viewliftEndpoint = regularVariables?.viewliftEndpoint;
-  if (!viewliftEndpoint) throw new Error('viewliftEndpoint not found');
+  const uScreenEndpoint = regularVariables?.uScreenEndpoint;
+  if (!uScreenEndpoint) throw new Error('uScreenEndpoint not found');
   // ? VIEWLIFT_WATCHES_FETCH_LIMIT
-  const limit = Number(regularVariables?.viewliftWatchesFetchLimit);
-  if (!limit) throw new Error('viewLiftWatchesFetchLimit not found');
+  const limit = Number(regularVariables?.uScreenWatchesFetchLimit);
+  if (!limit) throw new Error('uScreenWatchesFetchLimit not found');
   // ? VIEWLIFT_EMAIL
   const calculatorEndpoint = regularVariables?.calculatorEndpoint;
   if (!calculatorEndpoint) throw new Error('calculatorEndpoint not found');
@@ -55,7 +55,7 @@ const getDashboardSettings = async (): Promise<IDashboardSettings> => {
   return {
     nextUpToOwedSplitPercentage,
     systemActivationDate,
-    viewliftEndpoint,
+    uScreenEndpoint,
     email,
     password,
     maxCount,
