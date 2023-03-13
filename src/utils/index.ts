@@ -23,25 +23,22 @@ const getDashboardSettings = async (): Promise<IDashboardSettings> => {
   const expiredAfterInYears = Number(regularVariables?.expiredAfterInYears);
   if (!expiredAfterInYears) throw new Error('expiredAfterInYears not found');
 
-  // ? VIEWLIFT_EMAIL
-  const email = regularVariables?.viewliftEmail;
-  if (!email) throw new Error('viewLiftEmail not found');
-  // ? VIEWLIFT_ENDPOINT
+  // ? USCREEN_ENDPOINT
   const uScreenEndpoint = regularVariables?.uScreenEndpoint;
   if (!uScreenEndpoint) throw new Error('uScreenEndpoint not found');
-  // ? VIEWLIFT_WATCHES_FETCH_LIMIT
+  // ? USCREEN_WATCHES_FETCH_LIMIT
   const limit = Number(regularVariables?.uScreenWatchesFetchLimit);
   if (!limit) throw new Error('uScreenWatchesFetchLimit not found');
-  // ? VIEWLIFT_EMAIL
+  // ? USCREEN_CALCULATOR_ENDPOINT
   const calculatorEndpoint = regularVariables?.calculatorEndpoint;
   if (!calculatorEndpoint) throw new Error('calculatorEndpoint not found');
 
-  let password = encryptedVariables?.viewliftPassword;
-  if (!password) throw new Error('viewLiftPassword not found');
-  // ? VIEWLIFT_PASSWORD
+  let uscreenApiKey = encryptedVariables?.uscreenApiKey;
+  if (!uscreenApiKey) throw new Error('Uscreen Api Key not found');
+  // ? USCREEN_API_KEY
 
-  password = AES
-    .decrypt(password, ENCRYPTION_SECRET_KEY)
+  uscreenApiKey = AES
+    .decrypt(uscreenApiKey, ENCRYPTION_SECRET_KEY)
     .toString(enc.Utf8);
 
   let stripeKey = encryptedVariables?.stripeKey;
@@ -56,8 +53,7 @@ const getDashboardSettings = async (): Promise<IDashboardSettings> => {
     nextUpToOwedSplitPercentage,
     systemActivationDate,
     uScreenEndpoint,
-    email,
-    password,
+    uscreenApiKey,
     maxCount,
     expiredAfterInYears,
     limit,

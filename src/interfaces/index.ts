@@ -160,13 +160,12 @@ interface IVariables {
     systemActivationDate: string;
     fetchMaxCount: string;
     expiredAfterInYears: string;
-    viewliftEmail: string;
     uScreenEndpoint: string;
     uScreenWatchesFetchLimit: string;
     calculatorEndpoint: string;
   };
   encryptedVariables: {
-    viewliftPassword: string;
+    uscreenApiKey: string;
     stripeKey: string;
   };
 }
@@ -176,10 +175,9 @@ interface IDashboardSettings {
   systemActivationDate: string;
   maxCount: number;
   expiredAfterInYears: number;
-  email: string;
   uScreenEndpoint: string;
   limit: number;
-  password: string;
+  uscreenApiKey: string;
   stripeKey: string;
   calculatorEndpoint: string;
 }

@@ -1,6 +1,6 @@
 {
-  "name": "nextup-comedy",
-  "version": "1.2.02",
+  "name": "nc-db-new",
+  "version": "1.2.05",
   "description": "Database models for NextUp Comedy Website",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,7 +19,7 @@
     "models",
     "database"
   ],
-  "author": "Zaher, Ibrahim, Rand, Ayman, and Nujood",
+  "author": "Ayman",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NextUp-comedy/db-models-nc/issues"
